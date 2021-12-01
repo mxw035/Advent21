@@ -9,7 +9,6 @@ depth = open("index.txt", "r")
 
 for x in depth:
     measure.append(int(x))
-
 i = 0
 while i < len(measure):
     c = int(i)
@@ -20,22 +19,15 @@ while i < len(measure):
         print(p)
         print(measure[p])
         if measure[c] > measure[p]:
-            print("Increased")
             inc = inc + 1
         elif measure[c] < measure[p]:
-            print("Decreased")
             dec = dec + 1
         else:
-            print("Same Error")
             er = er + 1
     else:
         print("No previous depth")
-
     i = i + 1
-print(len(measure))
 print(inc)
-print(dec)
-print(er)
 
 
 
