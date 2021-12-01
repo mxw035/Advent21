@@ -40,13 +40,10 @@ while g < len(sums):
         print("No previous Depth")
     elif g > 0:
         if sums[g] > sums[g-1]:
-            print("Increased")
             inc = inc + 1
         elif sums[g] < sums[g-1]:
-            print("Decreased")
             dec = dec + 1
         else:
-            print("Same Depth")
             er = er + 1
     g = g + 1
 
