@@ -14,10 +14,6 @@ while i < len(measure):
     c = int(i)
     p = int(i - 1)
     if p >= 0:
-        print(c)
-        print(measure[c])
-        print(p)
-        print(measure[p])
         if measure[c] > measure[p]:
             inc = inc + 1
         elif measure[c] < measure[p]:
